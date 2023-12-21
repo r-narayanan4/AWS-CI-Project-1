@@ -1,0 +1,12 @@
+version: 0.0
+os: linux
+
+hooks:
+  ApplicationStop:
+    - location: sample-python-app/stop_container.sh
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: sample-python-app/start_container.sh
+      timeout: 300
+      runas: root
