@@ -27,4 +27,4 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: ../Sample-python-app
+  base-directory: Sample-python-app
